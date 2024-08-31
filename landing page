@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Interactive Navigation Menu</title>
+<style>
+body {
+margin: 0;
+font-family: Arial, sans-serif;
+}
+
+nav {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+background-color: #00ffff;
+padding: 10px 0;
+z-index: 1000;
+}
+
+nav ul {
+list-style: none;
+margin: 0;
+text-align: center;
+}
+
+nav ul li {
+display: inline;
+}
+
+nav ul li a {
+display: inline-block;
+color: white #fff;
+text-decoration: none;
+padding: 10px 20px;
+border-radius:10px;
+border: 2px solid magenta;
+background-color: #ff0000;
+transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+background-color: #ff00ff;
+border-radius: 15px;
+border: 2px solid #a341f3;
+}
+
+#content {
+padding-top:50px; /*Adjust according to the height of your fixed navbar */
+}
+
+/* Add more styles as needed */
+
+</style>
+</head>
+<body>
+<nav id="navbar">
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<div id="content">
+<!--Your page content goes here -->
+<div id="home"><h1>HEAD SECTION</h1> <p> Sister make our childhood beautiful and wholesome. the unbreakable bond we share with our sister makes it even more special. having a sibling makes our younger days even more fun and memorable. it is so much fun to go back home and share something with someone other than the parents. Sisters can be best friends and at the same time protectors. Here are a few sample essays on the topic of 'My sister'. sister make our life beautiful and make it worth living. they are the beautiful flowers that we have in our lives. sister will fight with you, but at the end of the day, they will always be at your side.</p>
+<div id="about"><h1>ABOUT SECTION</h1> <p> Sister make our childhood beautiful and wholesome. the unbreakable bond we share with our sister makes it even more special. having a sibling makes our younger days even more fun and memorable. it is so much fun to go back home and share something with someone other than the parents. Sisters can be best friends and at the same time protectors. Here are a few sample essays on 'My sister'. sister make our life beautiful and make it worth living. they are the beautiful flowers that we have in our lives. sister will fight with you, but at the end of the day, they will always be at your side.</p>
+<div id="Services"><h1>SERVICES SECTION</h1> <p> Sister make our childhood beautiful and wholesome. the unbreakable bond we share with our sister makes it even more special. having a sibling makes our younger days even more fun and memorable. it is so much fun to go back home and share something with someone other than the parents. Sisters can be best friends and at the same time protectors. Here are a few sample essays on the topic of 'My sister'. sister make our life beautiful and make it worth living. they are the beautiful flowers that we have in our lives. sister will fight with you, but at the end of the day, they will always be at your side.</p>
+<div id="CONTACT"><h1>CONTACT SECTION</h1> <p> Sister make our childhood beautiful and wholesome. the unbreakable bond we share with our sister makes it even more special. having a sibling makes our younger days even more fun and memorable. it is so much fun to go back home and share something with someone other than the parents. Sisters can be best friendsSS and at the same time protectors. Here are a few sample essays on the topic of 'My sister'. sister make our life beautiful and make it worth living. they are the beautiful flowers that we have in our lives. sister will fight with you, but at the end of the day, they will always be at your side.</p>
+</DIV>
+
+<script>
+window.addEventListener('scroll',function() {
+var navbar = document.getElementById('navbar');
+if (window.scrolly > 0) {
+navbar.style.backgroundcolor = "purple"; //Change background color when scrolled
+} else {
+navbar.style.background ="pink";
+}
+});
+</script>
+</body>
+</html>
